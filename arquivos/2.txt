@@ -1,5 +1,5 @@
 4
 abcabb
-abbcbcbc
-bbbbccccbcabbc
+abbbb
+bbbbbcabbc
 abbcbcbacbbcbcbc

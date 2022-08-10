@@ -50,12 +50,14 @@ def estado0(arquivo):
   global contadorLinhas 
   if(contadorString == len(arquivo[contadorLinhas])):
     ESTADO = "COMPLETO"
-    RESULTADO = " pertence"
+    RESULTADO = " não pertence"
   else:
     if(arquivo[contadorLinhas][contadorString] == 'a'):
       ESTADO = "ESTADO1"
-    else:
+    elif(arquivo[contadorLinhas][contadorString] == 'b'):
       ESTADO = "ESTADO3"
+    else:
+      ESTADO = "ESTADO4"
   contadorString = contadorString+1
 
 def estado1(arquivo):
@@ -99,6 +101,8 @@ def estado3(arquivo):
   else:
     if(arquivo[contadorLinhas][contadorString] == 'a'):
       ESTADO = "ESTADO1"
+    elif(arquivo[contadorLinhas][contadorString] == 'c'):
+      ESTADO = "ESTADO4"
     else:
       ESTADO = "ESTADO3"
   contadorString = contadorString+1
