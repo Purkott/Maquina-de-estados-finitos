@@ -50,7 +50,7 @@ def estado0(arquivo):
   global contadorLinhas 
   if(contadorString == len(arquivo[contadorLinhas])):
     ESTADO = "COMPLETO"
-    RESULTADO = "ERRO"
+    RESULTADO = " pertence"
   else:
     if(arquivo[contadorLinhas][contadorString] == 'a'):
       ESTADO = "ESTADO1"
